@@ -110,10 +110,6 @@ if (isAjax()) {
 				right: 15px;
 			}
 		}
-		.alert-msgcontent
-		{
-
-		}
 		.alert-icon
 		{
 			width: 110px;
@@ -252,7 +248,7 @@ if (isAjax()) {
 		</div>
 	</form>
 </div>
-<<script src="jquery.min.js"></script>
+<script src="jquery.min.js"></script>
 <script type="text/javascript">
 	function ajaxUpload(obj, res)
 	{
@@ -266,7 +262,8 @@ if (isAjax()) {
 			alertMsg('red', '只能上传图片', false);
 			return;
 		}
-		console.log(file);return;
+		
+		//console.log(file);return;
 		var reader = new FileReader();//提供HTML5 FileReader 说明 https://www.cnblogs.com/access520/p/5672435.html
 		//将文件以Data URL 形式读入页面
 		reader.readAsDataURL(file);
@@ -282,6 +279,7 @@ if (isAjax()) {
 	}
 	var timer = '';
 	var index = 1;
+	
 	function alertMsg(color, content,clearsession)
 	{
 		console.log(color, content);
@@ -315,6 +313,7 @@ if (isAjax()) {
 		}
 	}
 </script>
+
 <?php
 if (isset($_SESSION['message'])) {
 	$msgColor = $_SESSION['message']['status'] == 'success' ? 'green' : 'red';
@@ -322,5 +321,6 @@ if (isset($_SESSION['message'])) {
 }
 
 ?>
+
 </body>
 </html>
