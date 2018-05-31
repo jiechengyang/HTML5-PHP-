@@ -13,7 +13,7 @@ html5盛行的时代，作为一名php程序猿，怎可以不学习一下H5
    #Now
     不光会使用，也还是要自己知道原理后也写得出来demo
     
- So，通过baidu,guke 写了一个H5上传文件的demo，目前demo不完善，完整版放在自己用YII2框架搭建的后台管理系统了
+ So，通过baidu 写了一个H5上传文件的demo，目前demo不完善，完整版放在自己用YII2框架搭建的后台管理系统了
  
 附上 核心代码:
 	var form = document.getElementById('user-form');
